@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Tic Tac Toe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="flex-column align-items-center mx-auto" style="max-width: 500px;">
+        <h2 class="text-center">
+            <span class="text-spooky">Spooky</span>
+            Tic Tac Toe
+        </h2>
+
+        <p>
+            <label for="p1Name">P1:</label>
+            <input id="p1Name" type="text" value="Player 1">
+        </p>
+    
+        <p>
+            <label for="p2Name">P2:</label>
+            <input id="p2Name" type="text" value="Player 2">
+        </p>
+
+        <p>
+            <button id="startBtn" type="button">Start</button>
+            <button id="resetBtn" type="button">Reset</button>
+        </p>
+
+        <div id="board"></div>
+        <div id="gameText" class="text-center"></div>
+    </div>
+</body>
+
+</html>

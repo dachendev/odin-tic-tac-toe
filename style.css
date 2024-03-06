@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.25rem 0.5rem;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid #888;
+    font-weight: bold;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #888;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#resetBtn {
+    background-color: #880808;
+}
+
+p {
+    margin-top: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-spooky {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #880808;
+}
+
+#board {
+    margin-bottom: 1rem;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-family: "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    text-align: center;
+    color: #880808;
+    background-color: #121212;
+    border: 1px solid #888;
+}
+
+#board.is-playing .square {
+    cursor: pointer;
+}
+
+#board.is-playing .square:hover {
+    background-color: #999;
+}
+
+#gameText {
+    font-weight: bold;
+}
